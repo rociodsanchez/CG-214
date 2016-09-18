@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+ 
+    <html>
+<!-- Everything between this tag is HTML! That's what <html></html> indicates. -->
+    
+        <head>
+            <title>Rocio Sanchez's CG 214 Website - Web Page Construction</title>
+        </head>
+        
+        <body>
+<!--All my notes for this class are in the body tag! The <body> tag indicates that anything between it and the closing </body> tag should be shown inside the main browser window.-->
+            <h1 id="top">Welcome to CG 214!</h1>
+
+<!-- Notes organized from latest to newest -->     
+<!-- Really should find out how to disable that auto-close-tags function because it's really annoying. -->
+                <nav>
+                    <ul>
+                <li><a href="#Week 3">Week 3</a></li>
+                        <ul><li><a href="pages/about%20me.html">Homework: my other page! About me!</a></li></ul>
+                <li><a href="#Week 2">Week 2</a></li>
+                <li><a href="#Week 1">Week 1</a></li>
+                        <ul><li><a href="pages/hw1%20abt%20my%20summer.html">Homework: blog entry about my summer!</a></li></ul>
+                    </ul>
+                </nav>   
+            
+<div>
+<h2 id="Week 3">Week 3</h2>
+    <h3>Class notes</h3>
+        <ul><li>Media Elements</li>
+            <ul><li>Images</li>
+            <li>.gifs</li>
+            <li>Frames of other websites i.e. google maps
+                <ul><li>iFrame is an abbreviation of inline frame</li></ul></li>
+            <li>Video</li>
+                <ul><li><a href="https://docs.google.com/presentation/d/1_OHIeEyiLkH88Gkdil0iohc8bsmcQp2uZgiohrGMOeQ/edit#slide=id.p" target="_blank">Here</a>'s a tutorial for converting videos for webpages</li></ul>
+            <li>Sound</li>
+            <li>Animation</li>
+            <li>Games</li>
+            <li>Chat tools</li>
+            </ul>
+        <li>Multiple Pages</li></ul>
+<!-- So I did a whole revamp of my website for this class... So I sort of already added an extra page for my week one assignment. So this week's homework will techinically be the second page I've added to this site! -->
+    <h3>Textbook notes</h3>
+        <ul><li>Chapter 3, 4, 5 are on lists, links, and images, respectively. They're great reads! Chapter 8 goes over extra markup which includes iframes.</li>
+            <ul><li>Chapter 3 - Lists, notes from <cite>HTML &amp; CSS DESIGN AND BUILD WEBSITES</cite></li>
+                <blockquote>Ordered lists are lists where each item in the list is numbered. For example, the list might be a set of steps for a recipe that must be performed in order, or a legal contractwhere each point needs to be identified by a section number.</blockquote>
+                <blockquote>Unordered lists are lists that begin with a bullet point (rather than characters that indicate order) </blockquote>
+                <blockquote>Definition lists are made up of a set of terms along with the definitions for each of those terms.</blockquote>
+                <ul><li>Attributes for lists are better edited in CSS</li>
+                <li>&#60;dl&gt; are used for sets of terms with definitions</li>
+                <li>&#60;dt&gt; holds the term name</li>
+                <li>&#60;dd&gt; holds the defition!</li></ul>
+<!-- I should also make a section or page for HTML/CSS/JS definitions and use the dl tags! -->
+            </ul>
+            <ul><li>Chapter 4 - Links</li>
+                <ul><li>In this chapter I learned how to link to other pages and to sections within my own page using the id attribute!</li></ul>
+            </ul>
+            <ul><li>Chapter 5 - Images</li>
+<!-- Took a pause in reading right about here this week, want to continue by making a separate page for textbook notes at a later point! -->
+                <ul><li>Notes on optimizing images for the web!</li>
+                <li>Notes on the right format for web!</li></ul>
+            </ul>
+        </ul>
+    <h3>Homework</h3>
+        <ul><li><s>On the same web page from last week, add a second page, google map, and a video</s></li>
+        <li><s>Second page can be of whatever - about you, a way to separate your work, etc</s></li>
+        <li><s>The video should relate to the content of your site. Even better if it's shot by you or of you!</s></li>
+        <li><s>Video must be locally on your page, and linked appropriately</s></li>
+        <li><s>Be sure to comment your work</s></li>
+        <li>Post your index file, new second page, and all media files in the proper file structure.</li>
+        <li>Post your github link to the google group</li></ul>
+</div> 
+    
+<hr /> 
+            
+<div>
+<h2 id="Week 2"><center>Week 2</center></h2>
+
+    <img src="https://suckasaccharide.files.wordpress.com/2013/02/lets-learn.jpg" alt="let's learn!" width="300px" height="200px">
+<!-- The align attribute doesn't work in HTML5 for image tags. Edit this in CSS once we start a stylesheet for that because I want to align images to center-->
+    <h3><a href="https://docs.google.com/presentation/d/1ZmlJ4MTQ0NdXYbVJDwTz-p7GGCfrE7zKaBOhYYgDFOk/edit#slide=id.p" target="blank">Class notes</a></h3>
+        <ul><li>Github - I think I got the hang of this! I actually realized I have a two year old account here, but I really had no idea what this site was for back then.</li>
+        <li>Adding onto what are in the slides, according to <cite>w3schools</cite>, <blockquote>"the HTML <dfn>&#60;div&gt; element</dfn> is a block level element that can be used as a container for other HTML elements. The &#60;div&gt; element has no special meaning. It has no required attributes, but style and class are common. Because it is a block level element, the browser will display line breaks before and after it."</blockquote></li>
+        <blockquote>"HTML (Hypertext Markup Language) elements are usually <dfn>inline</dfn> elements or <dfn>block-level</dfn> elements. An inline element occupies only the space bounded by the tags that define the inline element."</blockquote></ul>
+    <h3>Textbook notes</h3>
+<!-- How to link local PDF files? -->
+        <ul><li>More than just headings and paragraphs...</li>
+            <ul><li><sub>Subscript</sub> and <sup>superscript</sup> tags help out with writing dates and exponentiation</li>
+            <li>If you thought &#60;br /&gt; was a cool, check out the &#60;hr /&gt; tag! (Used between weeks in this page)</li></ul>
+        <li>Structural and semantic markup 
+            <ul><li>Bold and italic tags are structural, emphasis tags are semantic (which provides extra information; suchas where emphasis is placed in a sentence, that something you have written is a quotation (and who said it), the meaning of acronyms, and so on)</li>
+            <li>Other semantic tags include</li>
+                <ul><li>&#60;strong&gt; comes up as bold text</li>
+                <li>&#60;em&gt; comes up as italics</li>
+                <li>&#60;blockquotes&gt; are used for long quotes, like how  I used it above for the w3schools quote</li>
+                <li>&#60;q&gt; is used for shorter quotes and they input the <q></q> <!--""--> characters!</li>
+                <li>The &#60;abbr&gt; tag shows abbreviation on a text when hovered over! For example: <abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li>The &#60;address&gt; tag is used for the contact info of the writer of the page. Find mind before the closing body tag on this page!</li>
+                <li>&#60;cite&gt; shows up as italics and is used when citing sources, like I did above for <cite>w3schools</cite></li>
+                <li>&#60;dfn&gt; tags mark the defining instance of a term</li>
+                <li>Then there's the <ins>&#60;ins&gt;</ins> tag and the <del>&#60;del&gt;</del> tag!</li> These are used for editing content.
+                <li>The <s>&#60;s&gt;</s> renders the same as the insert tag, but is used for now-inaccurate content</li></ul>
+            </ul>
+        </ul>
+<!-- I'd really like to look into Adobe Dreamweaver. Adobe really has everything... -->
+    <h3>Homework</h3>
+        <ul><s><li>Make yourself a web page that you'll use as a resource for everything you've learned from this class</li>
+        <li>Make sure there is structural tags - head, body, p, and div</li>
+        <li>Include links and paragraphs</li>
+        <li>Have both a local image an image from a URL and make sure the file structure is right</li>
+        <li>Be sure to comment out your information</li>
+        <li>Also include a shortcut or interesting extension you've read about that you can use for Brackets</li>
+        <li>Post your index file, and any associated iamges to your github page, in the proper file structure</li>
+        <li>Post your github link to the google group</li></s></ul>
+<img src="images/harry%20styles%20dancing.gif" alt="harry styles dancing">
+    <p>And here we are! Learning! Time to move on to <a href="#Week 3">Week 3</a>.</p>
+</div>
+            
+<hr />
+            
+<div>
+    <h2 id="Week 1"><center>Week 1</center></h2>
+        <h3><a href="https://docs.google.com/presentation/d/1uBHqv7qnHy_L2wg7caGyCJS5dQZoG0F9JCI0LB9nqag/edit#slide=id.g117a6b7438_0_48" target="blank">Class notes</a></h3>
+<!-- I want the H3 heading to be indented. How do I do this? -->
+            <ul><li>Two main languages</li>
+                <ul><li>HTML - HyperText Markup Language</li>
+                <li>CSS - Cascading Styling Sheets</li></ul>
+            <li>Let's learn about HTML Elements</li>
+                <ul><li>HTML Elements are composed of</li>
+<!-- Here I used escape keys to write < and > signs -->
+                        <ul><li>A start tag, like &#60;h1&gt;</li>
+                        <li>An attribute, like the id="head" in &#60;h1 id="head"&gt;</li>
+                        <li> The content, like the "Hi Rocio!" in &#60;h1 id="head"&gt;Hi, Rocio!&#60;/h1&gt;</li>
+                        <li>The closing tag, like the &#60;/h1&gt; in &#60;h1 id="head"&gt;Hi, Rocio!&#60;/h1&gt;</li></ul>
+                    <li>Tags</li>
+                        <ul><li>Structural tags are</li>
+                            <ul><li>&#60;!doctype html&gt;</li>
+                            <li>&#60;html&gt;&#60;/html&gt;</li>
+                            <li>&#60;head&gt;&#60;/head&gt;</li>
+                            <li>&#60;body&gt;&#60;/body&gt;</li>
+                            <li>&#60;div&gt;&#60;/div&gt;</li></ul>
+                        <li>Text tags are</li>
+                            <ul><li>&#60;h1&gt;, &#60;h2&gt;, &#60;h3&gt;, &#60;h4&gt;, &#60;h5&gt;, &#60;h6&gt;</li>
+                            <li>&#60;p&gt;</li>
+                            <li>&#60;b&gt;</li>
+                            <li>&#60;i&gt;</li>
+                            <li>&#60;ul&gt;</li>
+                            <li>&#60;ol&gt;</li>
+                            <li>&#60;li&gt;</li>
+                            <li>&#60;/ br&gt;</li></ul>
+<!-- The two aforementioned tags work together like HTML and CSS! In fact all kinds of tags work together to bring deeper content to your...content!-->
+                    <li>The link tag</li>
+                        <ul><li>&#60;a&gt;</li>
+                        <li>The a is attributed to a URL (Uniform Resource Locator), relative URL's in the same site, or linking to a specific part of the page using #</li>
+                        <li>You may add attribute target="blank" if you want the page to open in a new window</li></ul>
+                    <li>The image tag</li>
+                        <ul><li>&#60;img&gt;</li>
+                        <li>Attributed src to where the image is located, it can be at a URL, a local directory, or inside your own site</li>
+                        <li>To change size, add weight and height attributes</li>
+                        <li>The alt attribute is used for SEO and accessibility, and it describes the image</li></ul>
+                    <li>Directories are important!</li>
+                        <ul><li>The root folder for this entire class website is called CG 214 WEBPAGE</li></ul>
+                        </ul>
+                </ul>
+            </ul>
+        <h3><a href="file:///Users/rocio/Desktop/CG%20214%20WEBPAGE/HTML&CSS%20DESIGN%20AND%20BUILD%20WEBSITES.pdf">Textbook notes</a></h3>
+<!-- I added the textbook PDF to my webpage folder but I don't know how to link it?! Gotta ask about that. -->
+            <ul><li>Understanding structure</li>
+                <ul><li>Attributes are composed of attribute names (like color, width, height, etc.) and attribute values (like 25px, 10%, etc.) Wrie names in lowercase.</li>
+                <li>Everything writen between the title tags show up on the tab of the browser window. The body tags hold the content that will show in the main broswer</li></ul>
+            <li>Learning about markup</li>
+                <ul><li>The HyperText in HTML is the part of the language where you can add links that reference other pages</li>
+                <li>The Markup part of HTML is what the tags do! Organize and structure your content</li>
+                <li>The language is all of HTML!</li></ul>
+            <li>Tags and Elements</li>
+                <ul><li>Sometimes tags are refered to as elements</li></ul>
+            </ul>
+        <h3><a href="/pages/hw1 abt my summer.html" target="blank">Homework</a></h3>
+            <ul><s><li>Make yourself a single web page, like a blog entry, talking about your memory (or memories) of the summer.</li>
+            <li>Make sure there is structural tags - head, body, p, and div</li>
+            <li>Include links, paragraphs, and images</li>
+            <li>Be sure to comment out your information</li></s></ul>
+</div>
+            
+<p><a href="#top">Top</a></p> 
+            
+<address>Rocio Sanchez
+<br /><a href="mailto:rocio.d.sanchez@gmail.com">rocio.d.sanchez@gmail.com</a></address>
+        
+        <!-- The closing </body> tag indicates the end of what should appear in the main browser window. -->
+        </body>
+    <!-- The closing </html> tag indicates that it is the end of the HTML code -->    
+    </html>
