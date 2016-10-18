@@ -1,0 +1,350 @@
+<!--I will be dedicating my midterm to the jewelry industry of the USA, with some focus on New York City. I want to learn more about the industry I market for so that'd why I'd like to blog about it. 
+
+The blog will include gifs and interactive content that is based on different kinds of jewelry made of different materials. I'll include iframes of maps from the places I visit, as well as videos and images of the jewelry I write about. -->
+
+
+<!DOCTYPE html>
+
+<!-- I was wondering why the CSS wouldn't apply to my HTML file, then I realized I needed to link them! -->
+
+    <html>
+<!-- Everything between this tag is HTML! That's what <html></html> indicates. -->
+    
+        <head>
+            <title>Rocio Sanchez's Website for Web Page Construction - CG 214</title>
+            <link rel="stylesheet" href="style.css" />
+        </head>
+        
+        <body>
+<!--All my notes for this class are in the body tag! The <body> tag indicates that anything between it and the closing </body> tag will be shown inside the main browser window.-->
+            
+            <h1 id="top">Welcome to CG 214!</h1>
+<div>
+<!-- Notes organized from latest to oldest -->     
+<!-- Really should find out how to disable that auto-close-tags function because it's really annoying. -->
+                <nav>
+                    <ul>
+                <li><a href="#week6">Week 6</a></li>
+                <li><a href="#week5">Week 5</a></li>
+                <li><a href="#week4">Week 4</a></li>
+                <li><a href="#week3">Week 3</a></li>
+                        <ul><li><a href="pages/about%20me.html">Homework: my other page! About me!</a></li></ul>
+                <li><a href="#week2">Week 2</a></li>
+                <li><a href="#week1">Week 1</a></li>
+                        <ul><li><a href="pages/hw1%20abt%20my%20summer.html">Homework: blog entry about my summer!</a></li></ul>
+                <li><a href="pages/textbook.html">Textbook notes</a></li>    </ul>
+            </nav>   </div>
+            
+<!-- I missed this class! So I missed the midterm introduction and a bunch of other things. But I caught up! -->
+    <div>
+<h2 id="week6">Week 6</h2>
+    <h3><a href="https://docs.google.com/presentation/d/1JAiQWywgWJnErEkruYAeAOB99u_C5CeBJfO92LDR58A/edit#slide=id.g16d75d52c1_0_0" target="blank">Class notes from October 5</a></h3>  
+        <ul><li>Editing color</li>
+            <ul><li>So many ways to change colors in CSS!</li>
+                <ul><li>Name of color - red, green blue...</li> 
+                <li>Hex color - like #ffffff</li>
+                <li>RGB(A) - this affects transparency</li>
+                <li>HSLA - Hue measured in degrees, Saturation in percents, and Lightness out of 1</li></ul></ul>
+        <li>Editing text</li>
+            <br/>
+            <img src="images/typography.jpg"/ width="700px" alt="Terms in Typography!">
+            <ul><li>Present a hierarchy of fonts because some fonts need to be downloaded by the user so having backup is good!</li>
+                <ul><li>If you still want to use a font file... use @font-face selector and source where the font is located</li> 
+                <li>For bold, use font-weight: strong;</li>
+                <li>For italics, use font-style: italic;</li>
+                <li>HSLA - Hue measured in degrees, Saturation in percents, and Lightness out of 1</li></ul></ul></ul>
+<!--I usually use Photoshop or my browser's color picker extension to find hex colors of websites and/or images, but the Brackets extension "Brackets Color Picker" looks pretty neat for this program! 
+
+I feel like I'll be using Paletton a lot too...-->
+        
+    <h3 id="hw">Homework due October 19</h3>
+        <ul><li>Write two paragraphs proposing your midterm project
+            <ul><li>The midterm project will be either:</li>
+                <ol><li>A blog website dedicated to something you love (a food, sport, band, etc)</li>
+                <li>A piece of hypertext art like these.</li></ol>
+            <li>The midterm will have at least three pages, use images and audio/video, and include an external stylesheet</li></ul>
+        <li>To hand in in two weeks:</li>
+            <ul><li>Two paragraphs describing what your midterm will be and why</li>
+            <li>Have an external CSS file 'style.css'</li>
+            <li>Use fonts and colors to enhance your page</li>
+            <li>Post your entire webpage in the proper file structure to github.</li>
+            <li>Post your github link to the google group</li></ul></ul>
+    </div>
+         
+<div>
+<h2 id="week5">Week 5</h2>
+    <h3><a href="https://docs.google.com/presentation/d/1Cpp8R_YbgNdF8SZRANrUqDL_WB78sKj8XOgV73KB_HE/edit#slide=id.p" target="blank">Class notes from September 28</a></h3> 
+        <ul><li>The Cascading Style Sheet! CSS!</li>
+            <ul><li>Make sure every page in your site is always linked to the main .css file (unless you want another sheet to be linked to a specific page? Depends!)</li></ul>
+            <li>Comments in CSS look like /* this */!</li>
+            <li>To selection a tag within another tag (Child Selector), use tag>tag!</li>
+            <li>See all different kinds of selectors below:</li></ul>
+        
+<!-- How do I style a table?-->
+    <center><table>
+        <tr id="mainrow">
+            <td><b>Selector Type</b></td>
+            <td><b>Tag Example</b></td>
+            <td><b>Meaning</b></td>
+        </tr>
+        <tr>
+            <td>Universal Selectors</td>
+            <td>* { }</td>
+            <td>Applies to full document</td>
+        </tr>
+        <tr>
+            <td>Type Selectors</td>
+            <td>h1, h2, h3 { }</td>
+            <td>Targets individual elements</td>
+        </tr>
+        <tr>
+            <td>Class Selector</td>
+            <td>.note { }</td>
+            <td>Targets all classes with value <b>note</b></td>
+        </tr>
+        <tr>
+            <td>ID Selector</td>
+            <td>#name { }</td>
+            <td>Targets only one ID with value <b>name</b></td>
+        </tr>
+        <tr>
+            <td>Child Selector</td>
+            <td>li>a { }</td>
+            <td>Targets all anchor tags within lists</td>
+        </tr>
+        <tr>
+            <td>Descendent Selector</td>
+            <td>p a { }</td>
+            <td>Targets all anchor tags in paragraphs, even if there's other elements between them</td>
+        </tr>
+    </table></center>
+        
+    <h3 id="hw">Homework due October 5</h3>
+        <ul><s><li>Take your current website and prepare your selectors</li>
+        <li>Start an external CSS file 'style.css' and reference all possible tags you use in it</li>
+        <li>You don't have to do anything to them yet, you can just make sure they're selected</li>
+        <li>If you feel comfortable, you can change the colors of all of the text elements</li>
+        <li>Post your entire webpage in the proper file structure to github.</li>
+        <li>Post your github link to the google group</li></s></ul>
+    </div>
+            
+<div> 
+<h2 id="week4">Week 4</h2>
+    <h3><a href="https://docs.google.com/presentation/d/1LFWIFUKDRV3c9aVGSlAGvYjK_tjXx5VC-NCxnQ4sWbM/edit#slide=id.p" target="blank">Class notes from September 21</a></h3>
+            <audio id="audio" controls loop>
+<!-- I added one of my all time fave songs - from the motion picture soundtrack of Amélie! -->
+                 <source src="audio/yann%20tiersen%20comptine.ogg" />
+                 <source src="audio/yann%20tiersen%20comptine.ogg" />
+            </audio>
+        <ul><li>Adding audio!</li>
+            <ul><li>OGG and MP3 for web</li></ul>
+        <li>Tables!</li>
+            <ul><li>TR stands for table row</li>
+                <li>TD stands for table data</li></ul>
+        <li>Forms!</li>
+            <ul><li>These use the &#60;form&#62; tag</li><li>Value tags are info that are input and saved, used for JS and PHP</li></ul></ul>
+
+<fieldset> 
+  <legend id="form">My Survey</legend>
+    <form>
+        <p>Username:
+            <input type="text" name="username" maxlength="50"/>
+        </p>
+        
+        <p>Password:
+            <input type="text" name="password" maxlength="28" required="required"/>
+<!-- required="required" is form validation! It won't go on with the user's request until that input is submitted -->
+        </p>
+        
+        <p>What did you think of this lesson?</p>
+            <textarea name="comments" placeholder="Enter your comments"></textarea>
+        
+        <p>Select your favorite input type:
+            <br />
+            <input type="radio" name="favButton" value="radio" checked="checked" />Radio
+            <input type="radio" name="favButton" value="checked" />Checked
+            <input type="radio" name="favButton" value="text" />Text
+        </p>        
+        
+        <p>Select your favorite input type:
+            <br />
+<!-- Update iPhone settings for accessibility, use <label> for screen reader-->
+            <label><input type="checkbox" name="favButton" value="radio" checked="checked" />Radio</label>
+            <input type="checkbox" name="favButton" value="checked" />Checked
+            <input type="checkbox" name="favButton" value="text" />Text
+        </p>
+  
+<!-- This code section 72-77 isn't working right? Why? -->
+        <p>Select your favorite input type:</p>
+            <select name="buttons">
+                <option value="radio" selected="selected">Radio</option>
+                <option value="checkbox">Checkbox</option>
+                <options value="text">Text</options>
+            </select>
+        
+        <p>Are you ready to make that selection?</p>
+            <input type="submit" name="submit" value="SUBMIT" />
+    </form>
+    
+    <p>Want to learn more about FORMS? Click <a href="http://www.w3schools.com/html/html_form_input_types.asp">HERE</a>!</p>
+    
+</fieldset>
+
+    <h3 id="hw"><a href="#form">Homework due September 28</a></h3>
+        <ul><li><s>On one of your current pages add a form element.</s>
+            <ul><li><s>It can be any of the ones discussed in class, or another if you're feeling adventurous</s></li></ul></li>
+        <s><li>Post your index file, new second page, and all media files in the proper file structure.</li>
+        <li>Post your github link to the google group.</li>
+        <li>Read <a href="https://helpx.adobe.com/dreamweaver/how-to/understanding-css.html">this</a> to prepare for CSS.</li></s></ul>
+</div> 
+            
+            
+<div>
+<h2 id="week3">Week 3</h2>
+    <h3><a href="https://docs.google.com/presentation/d/1r9DP7RHcFTbh4KLrIBtOSkA_GH4-QWbPKAsgn3BTEFM/edit#slide=id.p" target="blank">Class notes from September 14</a></h3>
+        <ul><li>Media Elements</li>
+            <ul><li>Images</li>
+            <li>.gifs</li>
+            <li>Frames of other websites i.e. google maps
+                <ul><li>iFrame is an abbreviation of inline frame</li></ul></li>
+            <li>Video</li>
+                <ul><li><a href="https://docs.google.com/presentation/d/1_OHIeEyiLkH88Gkdil0iohc8bsmcQp2uZgiohrGMOeQ/edit#slide=id.p" target="_blank">Here</a>'s a tutorial for converting videos for webpages</li></ul>
+            <li>Sound</li>
+            <li>Animation</li>
+            <li>Games</li>
+            <li>Chat tools</li>
+            </ul>
+        <li>Multiple Pages</li></ul>
+<!-- So I did a whole revamp of my website for this class... So I sort of already added an extra page for my week one assignment. So this week's homework will techinically be the second page I've added to this site! -->
+
+    <h3 id="hw"><a href="pages/about%20me.html">Homework due September 21</a></h3>
+        <ul><li><s>On the same web page from last week, add a second page, google map, and a video</s></li>
+        <li><s>Second page can be of whatever - about you, a way to separate your work, etc</s></li>
+        <li><s>The video should relate to the content of your site. Even better if it's shot by you or of you!</s></li>
+        <li><s>Video must be locally on your page, and linked appropriately</s></li>
+        <li><s>Be sure to comment your work</s></li>
+        <s><li>Post your index file, new second page, and all media files in the proper file structure.</li>
+        <li>Post your github link to the google group</li></s></ul>
+</div> 
+            
+<div>
+<h2 id="week2">Week 2</h2>
+
+    <img src="https://suckasaccharide.files.wordpress.com/2013/02/lets-learn.jpg" alt="let's learn!" width="300px" height="200px">
+<!-- The align attribute doesn't work in HTML5 for image tags. Edit this in CSS once we start a stylesheet for that because I want to align images to center-->
+    <h3><a href="https://docs.google.com/presentation/d/1ZmlJ4MTQ0NdXYbVJDwTz-p7GGCfrE7zKaBOhYYgDFOk/edit#slide=id.p" target="blank">Class notes from September 7</a></h3>
+        <ul><li>Github - I think I got the hang of this! I actually realized I have a two year old account here, but I really had no idea what this site was for back then.</li>
+        <li>Adding onto what are in the slides, according to <cite>w3schools</cite>, <blockquote>"the HTML <dfn>&#60;div&gt; element</dfn> is a block level element that can be used as a container for other HTML elements. The &#60;div&gt; element has no special meaning. It has no required attributes, but style and class are common. Because it is a block level element, the browser will display line breaks before and after it."</blockquote></li>
+        <blockquote>"HTML (Hypertext Markup Language) elements are usually <dfn>inline</dfn> elements or <dfn>block-level</dfn> elements. An inline element occupies only the space bounded by the tags that define the inline element."</blockquote></ul>
+<!-- I'd really like to look into Adobe Dreamweaver. Adobe really has everything... -->
+    <h3 id="hw">Homework due September 14</h3>
+        <ul><s><li>Make yourself a web page that you'll use as a resource for everything you've learned from this class</li>
+        <li>Make sure there is structural tags - head, body, p, and div</li>
+        <li>Include links and paragraphs</li>
+        <li>Have both a local image an image from a URL and make sure the file structure is right</li>
+        <li>Be sure to comment out your information</li>
+        <li>Also include a shortcut or interesting extension you've read about that you can use for Brackets</li>
+        <li>Post your index file, and any associated iamges to your github page, in the proper file structure</li>
+        <li>Post your github link to the google group</li></s></ul>
+<img src="images/harry%20styles%20dancing.gif" alt="harry styles dancing">
+    <p>And here we are! Learning! Time to move on to <a href="#Week 3">Week 3</a>.</p>
+</div>
+            
+            
+<div>
+    <h2 id="week1">Week 1</h2>
+        <h3><a href="https://docs.google.com/presentation/d/1uBHqv7qnHy_L2wg7caGyCJS5dQZoG0F9JCI0LB9nqag/edit#slide=id.g117a6b7438_0_48" target="blank">Class notes from August 31</a></h3>
+<!-- I want the H3 heading to be indented. How do I do this? -->
+            <ul><li>Two main languages</li>
+                <ul><li>HTML - HyperText Markup Language</li>
+                <li>CSS - Cascading Styling Sheets</li></ul>
+            <li>Let's learn about HTML Elements</li>
+                <ul><li>HTML Elements are composed of</li>
+<!-- Here I used escape keys to write < and > signs -->
+                        <ul><li>A start tag, like &#60;h1&gt;</li>
+                        <li>An attribute, like the id="head" in &#60;h1 id="head"&gt;</li>
+                        <li> The content, like the "Hi Rocio!" in &#60;h1 id="head"&gt;Hi, Rocio!&#60;/h1&gt;</li>
+                        <li>The closing tag, like the &#60;/h1&gt; in &#60;h1 id="head"&gt;Hi, Rocio!&#60;/h1&gt;</li></ul>
+                    <li>Tags</li>
+                        <ul><li>Structural tags are</li>
+                            <ul><li>&#60;!doctype html&gt;</li>
+                            <li>&#60;html&gt;&#60;/html&gt;</li>
+                            <li>&#60;head&gt;&#60;/head&gt;</li>
+                            <li>&#60;body&gt;&#60;/body&gt;</li>
+                            <li>&#60;div&gt;&#60;/div&gt;</li></ul>
+                        <li>Text tags are</li>
+                            <ul><li>&#60;h1&gt;, &#60;h2&gt;, &#60;h3&gt;, &#60;h4&gt;, &#60;h5&gt;, &#60;h6&gt;</li>
+                            <li>&#60;p&gt;</li>
+                            <li>&#60;b&gt;</li>
+                            <li>&#60;i&gt;</li>
+                            <li>&#60;ul&gt;</li>
+                            <li>&#60;ol&gt;</li>
+                            <li>&#60;li&gt;</li>
+                            <li>&#60;/ br&gt;</li></ul>
+<!-- The two aforementioned tags work together like HTML and CSS! In fact all kinds of tags work together to bring deeper content to your...content!-->
+                    <li>The link tag</li>
+                        <ul><li>&#60;a&gt;</li>
+                        <li>The a is attributed to a URL (Uniform Resource Locator), relative URL's in the same site, or linking to a specific part of the page using #</li>
+                        <li>You may add attribute target="blank" if you want the page to open in a new window</li></ul>
+                    <li>The image tag</li>
+                        <ul><li>&#60;img&gt;</li>
+                        <li>Attributed src to where the image is located, it can be at a URL, a local directory, or inside your own site</li>
+                        <li>To change size, add weight and height attributes</li>
+                        <li>The alt attribute is used for SEO and accessibility, and it describes the image</li></ul>
+                    <li>Directories are important!</li>
+                        <ul><li>The root folder for this entire class website is called CG 214 WEBPAGE</li></ul>
+                        </ul>
+                </ul>
+            </ul>
+        <h3 id="hw"><a href="/pages/hw1 abt my summer.html" target="blank">Homework due September 7</a></h3>
+            <ul><s><li>Make yourself a single web page, like a blog entry, talking about your memory (or memories) of the summer.</li>
+            <li>Make sure there is structural tags - head, body, p, and div</li>
+            <li>Include links, paragraphs, and images</li>
+            <li>Be sure to comment out your information</li></s></ul>
+</div>
+            
+<p><a href="#top">Top</a></p> 
+            
+<address >Rocio Sanchez
+<br /><a href="mailto:rocio.d.sanchez@gmail.com">rocio.d.sanchez@gmail.com</a></address>
+        
+            
+                <input id="name" type="text" placeholder="Input name" />
+    <textarea id="email" placeholder="Input email" />
+    <select id="Country">
+	<option>United States</option>
+	<option>Canada<option>
+	<option>Mexico</option>
+	<option>Other</option>
+	<option>Nowhere</option>
+    </select>
+    <button id="submit">Submit</button>
+    
+
+
+<script type="text/javascript">    submit.onclick = function() {
+	    var name = document.getElementById("name").value;
+	    var email = document.getElementById("email").value;
+	    var borough = document.getElementById("borough").value;
+	    console.log(name, email, test);
+	    var message = document.getElementById("message");
+	    message.innerHTML = "Hello " + name + " from "
+	    + borough + ", welcome to my website.";
+    };</script>
+            
+            
+<script type="text/javascript"> 
+//Do something here. 
+        <button id="submit">Click me.</button>
+        
+           var submit = document.getElementById("submit");
+    
+    submit.onclick = function() {
+	    console.log("Button pushed!");
+    };
+            </script>
+            
+        <!-- The closing </body> tag indicates the end of what should appear in the main browser window. -->
+        </body>
+    <!-- The closing </html> tag indicates that it is the end of the HTML code -->    
+    </html>

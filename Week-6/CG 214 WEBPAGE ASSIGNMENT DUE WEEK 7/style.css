@@ -1,0 +1,63 @@
+/* This is a comment! */
+
+/* I want to style images!!!!!! */
+
+body {
+    padding: 50px
+}
+
+h1 {
+    background-color: #ffb2aa;
+    border-radius: 500px;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 2px 2px 3px #fff;
+    padding: 40px;
+    margin-bottom: 55px;
+}
+
+nav {
+    align-items: center
+}
+
+#week1, #week2, #week3, #week4, #week5, #week6, #week7, #week8, #week9, #week10, #week11, #week12, #week13, #week14  {
+    font-family: cursive, "Verdana", "Arial", "Times New Roman";
+    text-align: center;
+    background-color: #ffb2aa;
+    border-radius: 500px;
+}
+
+a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffb2aa;
+}
+
+#audio {
+    
+}
+
+#hw {
+    
+}
+
+
+table {
+    text-align: center;
+    padding: 40px;=
+    /* How to select rows and adjust their width? */
+}
+
+div {
+    font-family: georgia;
+    padding: 20px;
+    
+}
